@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Céline &amp; Marc — Notre Mariage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#fff8f5;
+      --accent:#c66a72;
+      --accent-2:#f7c6c9;
+      --muted:#6b6b6b;
+      --card:#ffffff;
+      --maxw:1100px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:#222}
+
+    a{color:inherit;text-decoration:none}
+
+    .container{max-width:var(--maxw);margin:0 auto;padding:2rem}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+    .logo{font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--accent)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr;gap:1.5rem;align-items:center;padding:2rem;border-radius:16px;background:linear-gradient(180deg,rgba(255,255,255,0.55),rgba(255,255,255,0.6));box-shadow:0 6px 30px rgba(0,0,0,0.06)}
+    .hero-inner{display:flex;flex-direction:column;gap:0.8rem}
+    .names{font-family:'Playfair Display',serif;font-size:2.4rem}
+    .meta{color:var(--muted);font-weight:600}
+    .date{display:inline-block;margin-top:.5rem;padding:.35rem .6rem;border-radius:999px;background:var(--accent-2);color:var(--accent);font-weight:700}
+
+    /* Grid sections */
+    .grid{display:grid;gap:1.25rem;margin-top:1.5rem}
+    .two{grid-template-columns:1fr 360px}
+
+    .card{background:var(--card);padding:1.25rem;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+
+    /* Couple */
+    .couple{display:flex;gap:1rem;align-items:center}
+    .portrait{width:120px;height:120px;border-radius:12px;overflow:hidden;background:linear-gradient(135deg,var(--accent),#f6a6ab);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    .bio small{color:var(--muted)}
+
+    /* Details */
+    .details dt{font-weight:700;margin-top:.6rem}
+    .details dd{margin:0 0 .6rem 0;color:var(--muted)}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+
+    /* RSVP */
+    .rsvp-form{display:flex;flex-direction:column;gap:.6rem}
+    .rsvp-form input,.rsvp-form textarea{padding:.65rem;border-radius:8px;border:1px solid #eee;font-size:.95rem}
+    .btn{display:inline-block;padding:.6rem 1rem;border-radius:10px;background:var(--accent);color:#fff;font-weight:700}
+
+    /* Footer */
+    footer{text-align:center;color:var(--muted);margin-top:1.8rem}
+
+    /* Responsive */
+    @media (min-width:900px){
+      .hero{grid-template-columns:1fr 380px}
+      .grid.two{grid-template-columns:1fr 360px}
+    }
+    @media (max-width:640px){
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      .portrait{width:90px;height:90px}
+      .names{font-size:1.6rem}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Céline ♥ Marc</div>
+      <nav aria-label="Navigation principale">
+        <a href="#notre-histoire">Notre histoire</a> ·
+        <a href="#evenement">Événement</a> ·
+        <a href="#rsvp">RSVP</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="names">Céline &amp; Marc</div>
+          <div class="meta">Nous nous marions !</div>
+          <div class="date">Samedi, 20 Juin 202ughukiyoyiolçyçoyoyoyçoyçosssss6</div>
+
+          <p style="margin-top:1rem;color:var(--muted);max-width:60ch">Rejoignez-nous pour célébrer l'amour, la famille et les amis. Cérémonie à 15h suivie d'un cocktail et d'un dîner sous la verrière.</p>
+        </div>
+
+        <aside class="card" style="text-align:center">
+          <div style="font-weight:700;margin-bottom:.6rem">Lieu</div>
+          <div style="color:var(--muted)">Domaine des Oliviers<br>123 route du Bonheur, Antananarivo</div>
+          <a href="#evenement" class="btn" style="margin-top:1rem;display:inline-block">Voir les détails</a>
+        </aside>
+      </section>
+
+      <section class="grid two" style="margin-top:1.25rem">
+        <div>
+          <article id="notre-histoire" class="card">
+            <h3 style="margin-top:0;font-family:'Playfair Display',serif">Notre histoire</h3>
+            <div class="couple" style="margin-top:.8rem">
+              <div class="portrait">C &amp; M</div>
+              <div class="bio">
+                <p style="margin:0 0 .4rem 0">On s'est rencontrés à l'université, autour d'un café et d'un projet trop ambitieux. Depuis, on partage rires, voyages et... briques LEGO (oui, toujours).</p>
+                <small>Nous avons hâte de partager ce jour spécial avec vous.</small>
+              </div>
+            </div>
+
+            <hr style="margin:1rem 0;border:none;border-top:1px dashed #eee">
+            <h4 style="margin-bottom:.4rem">Programme (aperçu)</h4>
+            <dl class="details">
+              <dt>Cérémonie</dt>
+              <dd>15h — Jardin du Domaine</dd>
+              <dt>Cocktail</dt>
+              <dd>16h30 — Terrasse</dd>
+              <dt>Dîner</dt>
+              <dd>19h — Salle principale</dd>
+            </dl>
+          </article>
+
+          <article class="card" style="margin-top:1rem" id="evenement">
+            <h3 style="margin-top:0;font-family:'Playfair Display',serif">Informations pratiques</h3>
+            <p style="color:var(--muted)">Parking sur place, tenue : chic décontracté. Si vous avez des restrictions alimentaires, merci de nous le signaler via le formulaire RSVP.</p>
+
+            <h4 style="margin-bottom:.4rem">Hébergement</h4>
+            <p style="margin:0;color:var(--muted)">Quelques hôtels partenaires à côté du domaine. Contactez-nous si vous voulez que l'on vous aide à réserver.</p>
+          </article>
+
+        </div>
+
+        <aside>
+          <div class="card">
+            <h4 style="margin-top:0">Galerie</h4>
+            <div class="gallery" aria-hidden="false">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop" alt="Photo du couple 1">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop" alt="Photo du couple 2">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=800&auto=format&fit=crop" alt="Photo du couple 3">
+              <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?q=80&w=800&auto=format&fit=crop" alt="Photo paysage">
+              <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=800&auto=format&fit=crop" alt="Photo décoration">
+              <img src="https://images.unsplash.com/photo-1502720705749-3c1c1f2f4cb2?q=80&w=800&auto=format&fit=crop" alt="Photo table">
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:1rem" id="rsvp">
+            <h4 style="margin-top:0">RSVP</h4>
+            <form class="rsvp-form" action="#" method="post" onsubmit="alert('Ce formulaire est un modèle — pour fonctionner, connectez-le à un service.')">
+              <input type="text" name="nom" placeholder="Votre nom" required>
+              <input type="email" name="email" placeholder="Votre email" required>
+              <select name="invites">
+                <option value="1">1 personne</option>
+                <option value="2">2 personnes</option>
+                <option value="3">3 personnes</option>
+                <option value="4">4 personnes</option>
+              </select>
+              <textarea name="allergies" rows="3" placeholder="Allergies / remarques (facultatif)"></textarea>
+              <button class="btn" type="submit">Confirmer ma présence</button>
+            </form>
+          </div>
+
+        </aside>
+      </section>
+
+      <footer>
+        <p>Merci de faire partie de notre histoire — Céline &amp; Marc</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
